@@ -1,0 +1,45 @@
+{
+  "note": "Suggested colours per vestment colour. 'base' for light backgrounds, 'onDark' for dark ones, 'wash' as a deep background tint.",
+  "colors": {
+    "green": {
+      "base": "#23643A",
+      "onDark": "#80C99A",
+      "wash": "#0F4D2E"
+    },
+    "violet": {
+      "base": "#703D96",
+      "onDark": "#C9A6EA",
+      "wash": "#3E1A60"
+    },
+    "rose": {
+      "base": "#B4687A",
+      "onDark": "#D196A1",
+      "wash": "#64253C"
+    },
+    "red": {
+      "base": "#A51219",
+      "onDark": "#D52B32",
+      "wash": "#6E0F18"
+    },
+    "white": {
+      "base": "#8A7A55",
+      "onDark": "#F5F5F2",
+      "wash": "#4E3E17"
+    },
+    "gold": {
+      "base": "#785000",
+      "onDark": "#F2C16E",
+      "wash": "#574008"
+    },
+    "black": {
+      "base": "#201A17",
+      "onDark": "#A8A8A8",
+      "wash": "#202022"
+    },
+    "blue": {
+      "base": "#235EA0",
+      "onDark": "#7FB4FF",
+      "wash": "#14366A"
+    }
+  }
+}

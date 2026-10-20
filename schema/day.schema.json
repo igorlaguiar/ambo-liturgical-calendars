@@ -1,0 +1,73 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://cdn.jsdelivr.net/gh/igoraguiar/liturgical-calendar-data@v1/schema/day.schema.json",
+  "title": "Liturgical day",
+  "type": "object",
+  "required": ["date", "form", "calendar", "season", "celebration", "alternatives", "status", "readings"],
+  "$defs": {
+    "text": {
+      "type": "object",
+      "required": ["en", "es", "pt-BR"],
+      "properties": {"en": {"type": "string"}, "es": {"type": "string"}, "pt-BR": {"type": "string"}}
+    },
+    "rank": {
+      "type": "object",
+      "required": ["code", "name"],
+      "properties": {
+        "code": {"type": "string", "description": "Ordinary Form: solemnity, feast, memorial, optional-memorial, sunday, weekday. 1962: class-1 to class-4, or commemoration."},
+        "name": {"$ref": "#/$defs/text"}
+      }
+    },
+    "color": {"enum": ["green", "violet", "rose", "red", "white", "black", "gold", "blue", null]}
+  },
+  "properties": {
+    "date": {"type": "string", "format": "date"},
+    "form": {"enum": ["ordinary", "1962"]},
+    "calendar": {"enum": ["general-roman", "united-states", "brazil", "mexico"]},
+    "season": {
+      "type": "object",
+      "required": ["code", "name"],
+      "properties": {
+        "code": {"enum": ["advent", "christmas", "ordinary-time", "lent", "paschal-triduum", "easter", "after-epiphany", "septuagesima", "after-pentecost", "other"]},
+        "name": {"$ref": "#/$defs/text"},
+        "week": {"type": ["integer", "null"], "description": "Week of the season (Ordinary Form only)."}
+      }
+    },
+    "celebration": {
+      "type": "object",
+      "required": ["title", "rank", "color"],
+      "properties": {"title": {"$ref": "#/$defs/text"}, "rank": {"$ref": "#/$defs/rank"}, "color": {"$ref": "#/$defs/color"}}
+    },
+    "alternatives": {
+      "type": "array",
+      "description": "Ordinary Form: optional memorials. 1962: commemorations.",
+      "items": {
+        "type": "object",
+        "properties": {"title": {"$ref": "#/$defs/text"}, "rank": {"$ref": "#/$defs/rank"}, "color": {"$ref": "#/$defs/color"}}
+      }
+    },
+    "status": {
+      "type": ["object", "null"],
+      "description": "At most one status per day, in this priority: holy day, fasting, abstinence, penance, recommended fasting/abstinence, Ember Day.",
+      "properties": {
+        "code": {"enum": ["holy-day-of-obligation", "fast-and-abstinence", "abstinence", "abstinence-substitution-allowed", "penance",
+                          "recommended-fast-and-abstinence", "recommended-fast", "recommended-abstinence", "ember-day"]},
+        "text": {"$ref": "#/$defs/text"},
+        "rule": {"type": "object", "properties": {"name": {"type": "string"}, "url": {"type": "string"}}}
+      }
+    },
+    "readings": {
+      "type": "array",
+      "description": "Citations only. Ordinary Form ids: first-reading, responsorial-psalm, second-reading, gospel (vigils have more). 1962 ids: epistle, gospel, passion and extra lessons.",
+      "items": {
+        "type": "object",
+        "required": ["id", "citation"],
+        "properties": {
+          "id": {"type": "string"},
+          "citation": {"type": "string"},
+          "passages": {"type": "array", "description": "1962 only: structured book/chapter/verse ranges."}
+        }
+      }
+    }
+  }
+}

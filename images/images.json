@@ -1,0 +1,77 @@
+{
+  "images": [
+    {
+      "file": "black.png",
+      "color": "black",
+      "width": 3840,
+      "height": 2160,
+      "bytes": 4962605,
+      "description": "Black altar frontal with candles, for Requiem and All Souls",
+      "license": "MIT"
+    },
+    {
+      "file": "default.png",
+      "color": "default",
+      "width": 3840,
+      "height": 2160,
+      "bytes": 5205482,
+      "description": "Empty nave at dusk with light through a rose window",
+      "license": "MIT"
+    },
+    {
+      "file": "gold.png",
+      "color": "gold",
+      "width": 3840,
+      "height": 2160,
+      "bytes": 6639078,
+      "description": "Gilded altarpiece and lilies by candlelight",
+      "license": "MIT"
+    },
+    {
+      "file": "green.png",
+      "color": "green",
+      "width": 3840,
+      "height": 2160,
+      "bytes": 5084241,
+      "description": "Green altar frontal in a stone chapel, morning light through a window",
+      "license": "MIT"
+    },
+    {
+      "file": "violet.png",
+      "color": "violet",
+      "width": 3840,
+      "height": 2160,
+      "bytes": 4663866,
+      "description": "Violet Advent candle and wreath in a dark chapel",
+      "license": "MIT"
+    },
+    {
+      "file": "red.png",
+      "color": "red",
+      "width": 3840,
+      "height": 2160,
+      "bytes": 5745091,
+      "description": "Red embroidered vestment beside a candle and red stained glass",
+      "license": "MIT"
+    },
+    {
+      "file": "rose.png",
+      "color": "rose",
+      "width": 3840,
+      "height": 2160,
+      "bytes": 4988924,
+      "description": "Rose Advent candle among violet ones, soft rose light",
+      "license": "MIT"
+    },
+    {
+      "file": "white.png",
+      "color": "white",
+      "width": 3840,
+      "height": 2160,
+      "bytes": 5369818,
+      "description": "Monstrance on a white altar cloth in golden light",
+      "license": "MIT"
+    }
+  ],
+  "notes": "One picture per vestment colour; 'default' is for any colour without its own. Subject sits on the right; the left 60% and bottom are dark for overlaid text."
+}

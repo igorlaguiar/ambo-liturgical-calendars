@@ -1,0 +1,27 @@
+name: Data correction
+description: Something in the calendar is wrong or missing
+labels: ["data"]
+body:
+  - type: input
+    id: date
+    attributes: {label: Date, placeholder: "2026-05-24"}
+    validations: {required: true}
+  - type: dropdown
+    id: form
+    attributes: {label: Missal, options: ["Ordinary Form", "1962 Missal", "Both"]}
+    validations: {required: true}
+  - type: dropdown
+    id: calendar
+    attributes: {label: Calendar, options: ["general-roman", "united-states", "brazil", "mexico", "All"]}
+    validations: {required: true}
+  - type: dropdown
+    id: field
+    attributes: {label: What's wrong, options: ["Title", "Rank", "Colour", "Season", "Holy day / penance status", "Reading citation", "Translation", "Image", "Other"]}
+    validations: {required: true}
+  - type: textarea
+    id: details
+    attributes: {label: What it says and what it should say}
+    validations: {required: true}
+  - type: input
+    id: source
+    attributes: {label: Source (ordo, rubric, bishops' conference page)}

@@ -1,0 +1,1 @@
+{"schemaVersion":1,"years":[2026,2027],"languages":["en","es","pt-BR"],"forms":{"ordinary":["general-roman","united-states","brazil","mexico"],"1962":["general-roman","united-states","brazil","mexico"]},"paths":{"year":"data/v1/{form}/{calendar}/{year}.json","day":"data/v1/{form}/{calendar}/{year}/{date}.json","images":"images/images.json","palette":"palette.json"}}
