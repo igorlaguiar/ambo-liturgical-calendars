@@ -92,6 +92,14 @@ The prompts used to debloat a Fire TV and build Glass Home with an AI coding ass
 
 Spotted a wrong colour, rank, holy day or citation? [Open a data correction](../../issues/new?template=data-correction.yml), with the date, missal and calendar, and a source if you have one.
 
+## Acknowledgements
+
+- **[Divinum Officium](https://www.divinumofficium.com/)**, for the 1962 calendar under the 1960 rubrics, the names of its feasts and commemorations in English, Spanish and Portuguese, and the 1962 reading references. Thank you for decades of careful work keeping the traditional liturgy available to everyone.
+- **[romcal](https://github.com/romcal/romcal)**, for the Ordinary Form calendar logic and each country's calendar rules.
+- **[ambo](https://ambo.today)**, where this data was first curated: the translations, the holy day and penance rules, and the wording of the status tags.
+
+This project isn't affiliated with or endorsed by any of them, or by the bishops' conferences whose norms and published citations it follows.
+
 ## License
 
 MIT, for the data, the images and the examples. See [LICENSE](LICENSE).
