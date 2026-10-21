@@ -3,7 +3,7 @@ import java.net.URL
 import java.time.LocalDate
 import org.json.JSONObject
 
-const val BASE = "https://cdn.jsdelivr.net/gh/igoraguiar/liturgical-calendar-data@v1"
+const val BASE = "https://cdn.jsdelivr.net/gh/igorlaguiar/ambo-liturgical-calendars@v1"
 
 fun today(form: String = "ordinary", calendar: String = "united-states", lang: String = "en"): String {
     val d = LocalDate.now().toString()

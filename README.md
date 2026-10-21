@@ -1,4 +1,4 @@
-# Liturgical calendar data
+# ambo liturgical calendars
 
 Free, ready-to-use data for the Catholic liturgical day, in **both the Ordinary Form and the 1962 Missal**, for **2026 and 2027**, in **English, Spanish and Portuguese**. One small JSON file per day, served free over a CDN, so a TV launcher, app or widget can fetch today in a single request.
 
@@ -50,7 +50,7 @@ Each country's calendar applies its own feasts, transfers (Epiphany, Ascension, 
 Base URL (free, via [jsDelivr](https://www.jsdelivr.com)):
 
 ```
-https://cdn.jsdelivr.net/gh/igoraguiar/liturgical-calendar-data@v1
+https://cdn.jsdelivr.net/gh/igorlaguiar/ambo-liturgical-calendars@v1
 ```
 
 | What | Path |
@@ -64,7 +64,7 @@ https://cdn.jsdelivr.net/gh/igoraguiar/liturgical-calendar-data@v1
 Today in the 1962 Missal, United States:
 
 ```bash
-curl -s "https://cdn.jsdelivr.net/gh/igoraguiar/liturgical-calendar-data@v1/data/v1/1962/united-states/$(date +%Y)/$(date +%F).json"
+curl -s "https://cdn.jsdelivr.net/gh/igorlaguiar/ambo-liturgical-calendars@v1/data/v1/1962/united-states/$(date +%Y)/$(date +%F).json"
 ```
 
 More examples in [examples/](examples): JavaScript, Python, Kotlin (Android) and Swift.

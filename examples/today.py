@@ -1,7 +1,7 @@
 # Today's celebration in both missals.
 import datetime, json, urllib.request
 
-BASE = "https://cdn.jsdelivr.net/gh/igoraguiar/liturgical-calendar-data@v1"
+BASE = "https://cdn.jsdelivr.net/gh/igorlaguiar/ambo-liturgical-calendars@v1"
 d = datetime.date.today().isoformat()
 for form in ("ordinary", "1962"):
     url = f"{BASE}/data/v1/{form}/general-roman/{d[:4]}/{d}.json"

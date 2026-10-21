@@ -9,7 +9,7 @@ struct Day: Decodable {
     let status: Status?
 }
 
-let base = "https://cdn.jsdelivr.net/gh/igoraguiar/liturgical-calendar-data@v1"
+let base = "https://cdn.jsdelivr.net/gh/igorlaguiar/ambo-liturgical-calendars@v1"
 let date = ISO8601DateFormatter.string(from: .now, timeZone: .current, formatOptions: [.withFullDate])
 let url = URL(string: "\(base)/data/v1/1962/united-states/\(date.prefix(4))/\(date).json")!
 let (data, _) = try await URLSession.shared.data(from: url)

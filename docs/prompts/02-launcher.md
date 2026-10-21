@@ -7,7 +7,7 @@ Give this prompt to your AI coding assistant after the debloat and basic launche
 Redesign my TV launcher as a reverent, beautiful home screen built around the day in the Church's calendar. Work on the real TV over ADB and check every change with a screenshot pulled from it.
 
 **Data.** Use the liturgical calendar data at
-`https://cdn.jsdelivr.net/gh/igoraguiar/liturgical-calendar-data@v1`
+`https://cdn.jsdelivr.net/gh/igorlaguiar/ambo-liturgical-calendars@v1`
 (format in its README and `schema/day.schema.json`). Fetch today's file for both forms, `ordinary` and `1962`, for the calendar **[united-states]** in **[en]**, once a day, and cache it on the device so the screen works offline. Also download the background pictures from `images/` and `palette.json`.
 
 **Layout (1920 × 1080, dark):**
@@ -27,4 +27,4 @@ Redesign my TV launcher as a reverent, beautiful home screen built around the da
 
 ---
 
-The calendar data is open; corrections are welcome as issues on the [data repo](https://github.com/igoraguiar/liturgical-calendar-data).
+The calendar data is open; corrections are welcome as issues on the [data repo](https://github.com/igorlaguiar/ambo-liturgical-calendars).

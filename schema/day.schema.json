@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://cdn.jsdelivr.net/gh/igoraguiar/liturgical-calendar-data@v1/schema/day.schema.json",
+  "$id": "https://cdn.jsdelivr.net/gh/igorlaguiar/ambo-liturgical-calendars@v1/schema/day.schema.json",
   "title": "Liturgical day",
   "type": "object",
   "required": ["date", "form", "calendar", "season", "celebration", "alternatives", "status", "readings"],
