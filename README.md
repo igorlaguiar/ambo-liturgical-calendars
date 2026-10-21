@@ -1,8 +1,10 @@
-# ambo liturgical calendars
+# Ambo Liturgical Calendars
 
 Free, ready-to-use data for the Catholic liturgical day, in **both the Ordinary Form and the 1962 Missal**, for **2026 and 2027**, in **English, Spanish and Portuguese**. One small JSON file per day, served free over a CDN, so a TV launcher, app or widget can fetch today in a single request.
 
 Made for TV home screens like [Glass Home](docs/prompts/02-launcher.md), but useful anywhere.
+
+From the creator of [Ambo: Catholic Prayer and Podcast App](https://ambo.today).
 
 ## What's in a day
 
